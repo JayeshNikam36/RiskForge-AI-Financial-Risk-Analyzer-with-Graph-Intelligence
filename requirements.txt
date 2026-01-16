@@ -1,0 +1,15 @@
+torch
+torch-geometric
+xgboost
+shap
+lime
+pandas
+numpy
+scikit-learn
+fastapi
+uvicorn
+langchain
+neo4j
+psycopg2-binary
+python-dotenv
+jupyterlab
