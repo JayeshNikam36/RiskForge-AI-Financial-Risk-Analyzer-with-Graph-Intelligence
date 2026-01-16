@@ -1,0 +1,106 @@
+import os
+
+# List of all directories to create
+dirs = [
+    ".github/workflows/ISSUE_TEMPLATE",
+    "configs/training",
+    "configs/inference",
+    "configs/agents",
+    "data/raw",
+    "data/interim",
+    "data/processed",
+    "data/synthetic",
+    "data/external",
+    "docs/architecture",
+    "docs/api",
+    "docs/experiments",
+    "experiments/experiment_runs",
+    "models/checkpoints/gnn",
+    "models/checkpoints/xgboost",
+    "models/checkpoints/multimodal",
+    "models/exported/onnx",
+    "notebooks/eda",
+    "notebooks/quick_experiments",
+    "notebooks/reports",
+    "scripts/utils",
+    "src/risk_guardian/config",
+    "src/risk_guardian/core/models",
+    "src/risk_guardian/core/datasets",
+    "src/risk_guardian/core/training",
+    "src/risk_guardian/core/evaluation",
+    "src/risk_guardian/data/ingestion",
+    "src/risk_guardian/data/preprocessing",
+    "src/risk_guardian/data/graph",
+    "src/risk_guardian/inference",
+    "src/risk_guardian/agents",
+    "src/risk_guardian/pipelines",
+    "src/risk_guardian/api/routes",
+    "src/risk_guardian/voice",
+    "src/risk_guardian/monitoring",
+    "src/risk_guardian/security",
+    "src/risk_guardian/utils",
+    "tests/unit",
+    "tests/integration",
+    "tests/e2e",
+    "deployment/docker",
+    "deployment/kubernetes",
+    "deployment/terraform",
+    "deployment/triton/model_repository"
+]
+
+# Create directories
+for directory in dirs:
+    os.makedirs(directory, exist_ok=True)
+
+# List of files to create with empty content
+files = [
+    ".github/workflows/ci.yml",
+    ".github/workflows/cd.yml",
+    ".github/dependabot.yml",
+    "configs/base.yaml",
+    "src/risk_guardian/__init__.py",
+    "src/risk_guardian/cli.py",
+    "src/risk_guardian/config/config_loader.py",
+    "src/risk_guardian/inference/local_inference.py",
+    "src/risk_guardian/inference/triton_client.py",
+    "src/risk_guardian/inference/postprocess.py",
+    "src/risk_guardian/agents/risk_agent.py",
+    "src/risk_guardian/agents/fraud_agent.py",
+    "src/risk_guardian/agents/compliance_agent.py",
+    "src/risk_guardian/agents/scenario_agent.py",
+    "src/risk_guardian/pipelines/etl_pipeline.py",
+    "src/risk_guardian/pipelines/training_pipeline.py",
+    "src/risk_guardian/pipelines/inference_pipeline.py",
+    "src/risk_guardian/pipelines/end_to_end.py",
+    "src/risk_guardian/api/app.py",
+    "src/risk_guardian/api/dependencies.py",
+    "src/risk_guardian/api/websocket.py",
+    "src/risk_guardian/voice/riva_client.py",
+    "src/risk_guardian/voice/voice_interface.py",
+    "src/risk_guardian/monitoring/prometheus.py",
+    "src/risk_guardian/monitoring/grafana_config.py",
+    "src/risk_guardian/monitoring/health_checks.py",
+    "src/risk_guardian/monitoring/drift_detection.py",
+    "src/risk_guardian/security/quantum_safe_crypto.py",
+    "src/risk_guardian/security/access_control.py",
+    "src/risk_guardian/utils/logger.py",
+    "src/risk_guardian/utils/exceptions.py",
+    "src/risk_guardian/utils/helpers.py",
+    "src/risk_guardian/utils/env_loader.py",
+    ".env.example",
+    ".gitignore",
+    "pyproject.toml",
+    "README.md",
+    "requirements.txt",
+    "tox.ini",
+    ".pre-commit-config.yaml",
+    "scripts/download_data.py",
+    "scripts/generate_synthetic.py"
+]
+
+# Create files
+for file in files:
+    with open(file, "w") as f:
+        pass  # just create empty file
+
+print("Folder structure and files created successfully!")
