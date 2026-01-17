@@ -13,10 +13,10 @@ neo4j
 psycopg2-binary
 python-dotenv
 jupyterlab
-xgboost-gpu, 
-rapids-cu12, 
-psycopg2, 
-fastapi, 
-uvicorn, 
-prometheus-client, 
+xgboost-gpu,
+rapids-cu12,
+psycopg2,
+fastapi,
+uvicorn,
+prometheus-client,
 alibi-detect

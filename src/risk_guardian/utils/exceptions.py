@@ -1,8 +1,9 @@
 import sys
-import traceback
+
 from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
+
 
 class CustomException(Exception):
     def __init__(self, error_message: str, error_detail: Exception):

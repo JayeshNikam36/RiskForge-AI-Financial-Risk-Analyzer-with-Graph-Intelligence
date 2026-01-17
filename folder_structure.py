@@ -45,7 +45,7 @@ dirs = [
     "deployment/docker",
     "deployment/kubernetes",
     "deployment/terraform",
-    "deployment/triton/model_repository"
+    "deployment/triton/model_repository",
 ]
 
 # Create directories
@@ -95,7 +95,7 @@ files = [
     "tox.ini",
     ".pre-commit-config.yaml",
     "scripts/download_data.py",
-    "scripts/generate_synthetic.py"
+    "scripts/generate_synthetic.py",
 ]
 
 # Create files
